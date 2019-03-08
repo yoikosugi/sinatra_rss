@@ -1,0 +1,21 @@
+<ul>
+  <li><%= @hatena.channel.title%></li>
+</ul>
+<li><a href="<%= @hatena.channel.link %>"><%= @hatena.channel.title %></a></li>
+
+<ul>
+<% @hatena.items.each do |entry| %>
+  <li><a href="<%= entry.link %>"><%= entry.title%></a></li>
+<% end %>
+<ul>
+
+<ul>
+  <li><%= @nhk.channel.title%></li>
+</ul>
+<li><a href="<%= @nhk.channel.link %>"><%= @nhk.channel.title %></a></li>
+
+<ul>
+<% @nhk.items.each do |entry| %>
+  <li><a href="<%= entry.link %>"><%= entry.description%></a></li>
+<% end %>
+<ul>
